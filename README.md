@@ -48,7 +48,7 @@ chunks
  # for pdf
 
 import requests
-url =  "http://localhost:8071/process_doc"
+url = "https://wiig.dia.fi.upm.es/chunking/process_doc"
 
 
 response = requests.post(
