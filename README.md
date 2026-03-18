@@ -33,7 +33,8 @@ Ejemplo para llamar a la API:
  # for txt
 
 import requests
-url = "http://localhost:8071/process_doc"
+url = "https://wiig.dia.fi.upm.es/chunking/process_doc"
+
 
 response = requests.post(
     url,
@@ -70,6 +71,7 @@ chunks_doc = response.json()
 chunks_doc[0]
 ```
 
+NOTE: type_name can be "note", "pdf", "docx". The endpoint enabled for testing purposes (inside the VPN of UPM) is "https://wiig.dia.fi.upm.es/chunking/process_doc"
 
 ## EVALUACIÓN
 
